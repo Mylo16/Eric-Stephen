@@ -15,8 +15,8 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: red;
-    color:black;
+    background-color: rgb(2, 2, 2);
+    color: white;
 }
 .welcome-text{
     display: flex;

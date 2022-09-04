@@ -1,0 +1,18 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.projects-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:800px){
+    .projects-column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

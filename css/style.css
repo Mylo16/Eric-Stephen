@@ -2,12 +2,32 @@ body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    width: 100vw;
+    position: relative;
 }
 .projects-column{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+#welcome-section{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color:black;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    padding-bottom: 10px;
+}
+.hey{
+    font-size: 45px;
+    
+}
+
 @media (max-width:800px){
     .projects-column{
         display: flex;
@@ -15,4 +35,71 @@ body{
         align-items: center;
         justify-content: center;
     }
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position:fixed;
+    background-color: #be3144;
+    padding: 10px;
+    width: 100%;
+    padding-right: 30px;
+}
+nav ul {
+    display:flex;
+    padding: 5px;
+    list-style: none;
+
+}
+nav ul li a{
+   text-decoration: none;
+    font-size:24px;
+    text-decoration: none;
+   padding:15px;
+   color: white;
+}
+nav ul li:hover{
+    background-color: rgb(121, 121, 199);
+}
+nav ul li{
+    height: 2em;
+}
+#projects{
+    background-color: #45567d;
+    padding-top:20px;
+    font-size: 20px;
+    color:white;
+}
+.project-tile{
+   
+    position:relative;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.project-tile::after{
+    content: "";
+    height:0.3px;
+    background-color:white;
+    width: 100%;
+    position:absolute;
+    border: solid 1px white;
+    display: block;
+}
+.projects-column{
+    position: relative;
+    display:flex;
+    width: 90%;
+    margin: auto;
+}
+.col{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+img{
+    width: 300px;
 }
